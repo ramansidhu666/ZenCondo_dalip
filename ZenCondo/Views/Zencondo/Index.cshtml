@@ -1,0 +1,912 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zen Condo</title>
+    <!-- Bootstrap -->
+    <link href="~/PeakCondo/css/bootstrap.css" rel="stylesheet">
+    <link href="~/PeakCondo/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/PeakCondo/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="~/PeakCondo/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="~/PeakCondo/css/font.css" rel="stylesheet">
+    <link href="~/PeakCondo/css/font-awesome.css" rel="stylesheet">
+    <link href="~/PeakCondo/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/PeakCondo/css/style.css" rel="stylesheet">
+    <link href="~/PeakCondo/css/media-queries.css" rel="stylesheet">
+
+    @*<link rel="stylesheet" href="~/PeakCondo/css/nivo-slider.css" type="text/css" media="screen" />*@
+
+   
+
+    <script src="~/PeakCondo/js/jquery-1.10.2.min.js"></script>
+  
+    <script src="~/PeakCondo/js/bootstrap.min.js"></script>
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>*@
+
+    @*<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>*@
+    <script type="text/javascript" src="~/PeakCondo/js/jquery.flexisel.js"></script>
+
+</head>
+<body>
+
+    <div class="background_sect">
+
+
+
+        <div class="container">
+            <div class="back_border">
+                <div class="middle_bg">
+                    <div class="top_sect_bg">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="logo_sctn">
+                                <h2>Dalip Kumar</h2>
+                                <span>Broker</span>
+                                @*<a href="#">
+                                    <img src="~/PeakCondo/images/logo.png" alt="" title="" />
+                                </a>*@
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="top_middle">
+                                <p>
+                                    For More Info<br/>
+                                    Call: <a href="tel:416-459-1558">416-459-1558</a><br />
+                                   </p>
+                                    </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="banner_sct_bg">
+                        <div class="">
+                            <div class="banner_sect">
+                                <div class="">
+                                    <div class="col-md-12 col-sm-12">
+                    <div class="banner_side">
+                        <img src="~/PeakCondo/images/banner1.jpg" data-thumb="~/PeakCondo/images/toystory.jpg" alt="" />
+                    </div>
+                </div>
+                                </div>
+                            </div>
+                            
+                            @*<div class="register_sect">
+                                <div class="row no_pddng">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="banner_content">
+                                            <h2>Zen Condos</h2>
+                                            <h5>Register now  for priority VIP Access</h5>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>*@
+                            <div class="middle_sect">
+                                <div class="row no_pddng">
+                                  <div class="col-md-12 col-sm-12">
+                                        <div class="top_sect">
+                                            <img src="~/PeakCondo/images/logo.png" alt="" title="" />
+                                            <h3>Register now  for priority VIP Access</h3>
+                                            <ul>
+                                                <li><i class="right"></i> Situated in the King West Village, an award winning community.</li>
+                                                <li><i class="right"></i> Boasts of a Walkscore of 84/100, hence it is walkable everywhere</li>
+                                                <li><i class="right"></i> Has first-class public transportation with a transit score of 96/100</li>
+                                                <li><i class="right"></i> Located in Toronto’s Niagara neighbourhood</li>
+                                                <li><i class="right"></i> It is within 2 minutes’ walk of the Strachan Avenue West Side Stop</li>
+                                                <li><i class="right"></i> It is within walking distance of the Exhibition GO Station</li>
+                                                <li><i class="right"></i> It is close to shops, schools and eateries</li>
+                                                <li><i class="right"></i> It is in close proximity to several parks including Stanley Park, The Gore, Massey Harris Park, Coronation Park, and Inukshuk Park.</li>
+                                                <li><i class="right"></i> It is a few minutes’ walk to Lake Ontario.</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row no_pddng">
+                                        <div class="col-md-4 col-sm-4">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <div class="register_btn">
+                                                <input type="button" class="btn btn-default registered_btnn" id="registrmodel" onclick="registermodel()" @*data-toggle="modal" data-target="#RegisterModal"*@ value="Click to Register">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services_sect">
+                                <div class="services_slider">
+                                    <ul id="flexiselDemo3">
+                                        <li><a href="#"><img src="~/PeakCondo/images/service1.jpg" /></a></li>
+                                        <li><a href="#"><img src="~/PeakCondo/images/service2.jpg" /></a></li>
+                                        <li><a href="#"><img src="~/PeakCondo/images/service3.jpg" /></a></li>
+                                        <li><a href="#"><img src="~/PeakCondo/images/service4.jpg" /></a></li>
+                                        <li><a href="#"><img src="~/PeakCondo/images/service5.jpg" /></a></li>
+                                        <li><a href="#"><img src="~/PeakCondo/images/service6.jpg" /></a></li>
+                                        <li><a href="#"><img src="~/PeakCondo/images/service7.jpg" /></a></li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="middle_sect_bg">
+                                <div class="">
+                                
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="main_content">
+                                            <h2>About King West Neighbourhood</h2>
+                                            <p>Residents at the condos will have all types of options when it comes to commuting. The 504 Streetcar operates 24/7 on the King Street. Also, the 501 Queen car is just a few blocks north, while the 510 Spadina and the 511 Bathurst cars pass through at a number of places in this vicinity’s well known intersections. Getting anywhere in the city is hassle-free as Gardiner and the Lake shore Blvd can be easily accessed through Spadina Avenue.
+                                       <br />The TTC Light rail is nearby on Fleet Street which conveniently connects you very fast to Union station.
+                                           <br/>The University of Toronto, Ryerson University, OCADU, and George Brown College are found in the neighbourhood, making the location a wonderful place for university students to live.
+                                     <br/>Residents at the condos will enjoy some of Toronto’s most thrilling amenities. Plenty awaits you here: stylish night life on King Street West, incredible music at Budweiser Stage, plus ceaseless entertainment at Exhibition Place.
+
+
+Other amenities in the neighbourhood include Canada’s Walk of Fame, the Art Gallery of Ontario, and Royal Alexander & Princess of Wales Theatre as well as Roy Thompson Hall</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="main_content_video">
+                                            <iframe height="315" src="https://www.youtube.com/embed/mu3wyNfQnNM" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle_sect">
+                                <div class="">
+                                    <div class="col-md-7 col-sm-7">
+                                        <div class="center_court_sect">
+                                           <h2>Centre Court Developments</h2>
+                                            <p>Centre Court is focused on the development of well thought out high-rise condominiums located in close proximity to Toronto’s major 
+                                            amenities, rapid transit network and employment areas. Centre Court is believe that this approach to development will contribute to the 
+                                            vibrancy, sustainability and competitiveness of Toronto. Centre Court is currently have eight high-rise residential projects in various stages of development throughout the Greater Toronto Area, collectively representing over 5,000 homes and $1.5 billion dollars of development value.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-5">
+                                        <div class="center_court_img">
+                                            <img src="~/PeakCondo/images/banner4.jpg" alt="" title="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="middle_sect_bg">
+                                <div class="">
+                                    <div class="col-md-5 col-sm-5">
+                                        <div class="vip_access_img">
+                                            <img src="~/PeakCondo/images/vip_banner.png" alt="" title="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <div class="main_content_neww">
+                                            <h2>Platinium VIP Access</h2>
+                                            <span>Why is this important?</span>
+                                            <p>After the opening to public prices could go up anywhere between $10,000-$20,000 it is essential to book your unit at the VIP 
+                                            Launch to get the most out of your investment.
+                                            <br/>
+                                            VIP Access allows you to have the lowest prices, first choice on units, and special VIP client incentives!
+                                             </p>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                            
+                            <div class="middle_sect3">
+                                <div class="">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="contact_form">
+                                            <form id="contact" action="" >
+                                                <h3>Register Now</h3>
+                                                <h4>Resgister yourself today, and get reply with in 24 hours!</h4>
+                                                <fieldset>
+                                                    <input name="userName" id="userName" placeholder="Your name" type="text"  >
+                                                </fieldset>
+                                                <fieldset>
+                                                    <input name="userEmail" id="userEmail" placeholder="Your Email Address" type="email" >
+                                                </fieldset>
+                                                <fieldset>
+                                                    <input name="userPhone" id="userPhone" placeholder="Phone No" type="tel" >
+                                                </fieldset>
+                                                <div class="form-group">
+                                                    <select class="form-control" id="IsReator">
+                                                        <option value="0" disabled="disabled" style="display: none; color: 000000;" selected>Are you a Realtor?</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select>
+                                                </div>
+                                                <fieldset>
+                                                    <div class="">
+                                                        <div class="form-group chkbxx">
+                                                            <input type="checkbox" id="confrmation" />
+                                                            By checking this box I consent to receiving electronic communications from you regarding upcoming developments and all other related communications.
+                                                            I am aware that I may withdraw my consent at any time by clicking unsubscribe. 
+
+                                                        </div>
+                                                    </div>
+
+                                                    <button name="submit" type="button" onclick="firstreg('popupreg')" id="contact submit" class="regis_btn" data-submit="...Sending">Submit</button>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="right_cntct_sect">
+                                            <div class="map_sect">
+                                                <h2>The Neighborhood</h2>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.294515262034!2d-79.4141397845026!3d43.64204047912172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b351d7b25cda9%3A0x2616c532dba06564!2sKing+St+W+%26+Strachan+Ave%2C+Toronto%2C+ON!5e0!3m2!1sen!2sca!4v1504299022463" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top_futer">
+                                <div class="row no_pddng">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="top_sect">
+                                            <img src="~/PeakCondo/images/logo.png" alt="" title="" />
+                                           <h5>Dalip Kumar Broker, Homelife Superstar Real Estate Ltd., Brokerage.    <b><a href="tel:416-459-1558">Call: 416-459-1558</a></b></h5> 
+                                             
+                                            <h5>We are not builders of this project.</h5>   
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="futer_section">
+                                <h2>Designed & Developed by Only4Agents</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        @*<a href="#" data-toggle="modal" data-target="#RegisterModal">Register</a>*@
+        
+        <div class="fuutr_phne_bg">
+            <div class="futer_mail_bg">
+                <div class="futer_mail">
+                    <ul>
+                        <li>
+                            <a href="mailto: dktalwar@hotmail.com">
+                                <img alt="" src="~/PeakCondo/images/mail_icnnn.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:416-459-1558">
+                                <img alt="" src="~/PeakCondo/images/mbl_icnnn.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sms:416-459-1558">
+                                <img alt="" src="~/PeakCondo/images/sms.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <!-- modal header -->
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title new_title2" id="myModalLabel">Message</h4>
+                </div><!-- /modal header -->
+                <!-- modal body -->
+                <div class="modal-body modal_msg">
+                    <p id="display_txt"> Must select the checkbox. </p>
+                </div>
+                <!-- /modal body -->
+
+                <div class="modal-footer">
+                    <!-- modal footer -->
+                    <button class="bigButton" data-dismiss="modal">Close</button>
+                </div><!-- /modal footer -->
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="RegisterModal" onclick="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <!-- modal header -->
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title new_title" id="myModalLabel">Register Now</h3>
+                </div><!-- /modal header -->
+                <!-- modal body -->
+                <div class="modal-body modaol_new">
+                    <form id="contact" action="" method="post">
+
+                        <h4>Resgister yourself today, and get reply with in 24 hours!</h4>
+                        <fieldset>
+                            <input name="userName" id="userName2" placeholder="Your name" type="text" tabindex="1" >
+                        </fieldset>
+                        <fieldset>
+                            <input name="userEmail" id="userEmail2" placeholder="Your Email Address" type="email" tabindex="2">
+                        </fieldset>
+                        <fieldset>
+                            <input name="userPhone" id="userPhone2" placeholder="Phone No" type="tel" tabindex="3">
+                        </fieldset>
+
+                        <div class="form-group">
+                            <select class="form-control" id="IsReator2">
+                                <option value="0" disabled="disabled" style="display: none; color: 000000;" selected>Are you a Realtor?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <fieldset>
+                            <div class="">
+                                <div class="form-group chkbxx">
+                                    <input type="checkbox" id="confrmation2" />
+                                    By checking this box I consent to receiving electronic communications from you regarding upcoming developments and all other related communications.
+                                    I am aware that I may withdraw my consent at any time by clicking unsubscribe. 
+                               </div>
+                            </div>
+
+                            <button name="submit" type="button" onclick="secondreg('reg')" id="contact submit" class="regis_btn" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- /modal body -->
+
+                <div class="modal-footer">
+                    <!-- modal footer -->
+                    <button class="bigButton" data-dismiss="modal">Close</button>
+                </div><!-- /modal footer -->
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    $(document).ready(function () {        
+        $(this).scrollTop(0);
+    });
+
+    function registermodel() {
+        $('#RegisterModal').modal('show');
+    }
+
+    function firstreg(first)
+    {
+        common(first);
+    }
+
+    function secondreg(secd) {
+
+        common2(secd);
+    }
+
+    function common(txt) {
+
+        debugger;
+        var chk = $("#confrmation").prop('checked');
+        var chk2 = $("#confrmation2").prop('checked');
+
+
+        if (txt == "popupreg")
+        {
+            if ($("#confrmation").prop('checked') != true) {
+                $('#display_txt').text('');
+                $('#display_txt').text('Must select the checkbox.');
+                $('#myModal').modal('show');
+                return false;
+            }
+        }
+        else if (txt == "reg")
+        {
+            if ($("#confrmation2").prop('checked') != true) {
+                $('#display_txt').text('');
+                $('#display_txt').text('Must select the checkbox.');
+                $('#myModal').modal('show');
+                return false;
+            }
+        }
+
+
+
+        if (ValidUsername() && ValidEmail() && ValidPhone() && RealtorChecked()) {
+            var person = {
+                name: $("#userName").val(),
+                email: $("#userEmail").val(),
+                phone: $("#userPhone").val(),
+                IsRealtor: $("#IsReator option:selected").text(),
+
+            }
+
+            $('.container').addClass('onblur');
+
+            $.ajax({
+                url: '/Zencondo/sendmail',
+                type: 'post',
+                dataType: 'json',
+                success: function (data) {
+                    $('#target').html(data.msg);
+                    $('#display_txt').text('');
+                    $('#display_txt').text('mail send successfully.');
+                    $('#myModal').modal('show');
+                    $('.container').removeClass('onblur');
+                    $("#userName").val(''),
+                    $("#userEmail").val(''),
+                    $("#userPhone").val(''),
+                    $("#userSubject").val(''),
+                    $("#Message").val('')
+                },
+                data: person
+            });
+        }
+        else {
+            return false;
+        }
+    }
+
+    function common2(txt) {
+
+        debugger;
+        var chk = $("#confrmation").prop('checked');
+        var chk2 = $("#confrmation2").prop('checked');
+
+
+        if (txt == "popupreg") {
+            if ($("#confrmation").prop('checked') != true) {
+                $('#display_txt').text('');
+                $('#display_txt').text('Must select the checkbox.');
+                $('#myModal').modal('show');
+                return false;
+            }
+        }
+        else if (txt == "reg") {
+            if ($("#confrmation2").prop('checked') != true) {
+                $('#display_txt').text('');
+                $('#display_txt').text('Must select the checkbox.');
+                $('#myModal').modal('show');
+                return false;
+            }
+        }
+
+
+
+        if (ValidUsername2() && ValidEmail2() && ValidPhone2() && RealtorChecked2()) {
+            var person = {
+                name: $("#userName2").val(),
+                email: $("#userEmail2").val(),
+                phone: $("#userPhone2").val(),
+                IsRealtor: $("#IsReator2 option:selected").text(),
+
+            }
+
+            $('.container').addClass('onblur');
+
+            $.ajax({
+                url: '/Zencondo/sendmail',
+                type: 'post',
+                dataType: 'json',
+                success: function (data) {
+                    $('#target').html(data.msg);
+                    $('#display_txt').text('');
+                    $('#display_txt').text('mail send successfully.');
+                    $('#myModal').modal('show');
+
+                    $('.container').removeClass('onblur');
+                    $("#userName2").val(''),
+                    $("#userEmail2").val(''),
+                    $("#userPhone2").val(''),
+                    $("#userSubject").val(''),
+                    $("#Message").val('')
+                },
+                data: person
+            });
+        }
+        else {
+            return false;
+        }
+    }
+
+    function ValidUsername() {
+
+        //first name validation
+        var firstname = $("#userName").val();
+        if (firstname !== '') {
+            if (!/^[a-zA-Z]*$/g.test(firstname)) {
+                $("#userName").addClass('validation_control');
+
+                $('#display_txt').text('');
+                $('#display_txt').text('Invalid user name.');
+                $('#myModal').modal('show');
+                return false;
+            } else if (firstname.length > 30) {
+                $("#userName").addClass('validat_cls');
+
+                $('#display_txt').text('');
+                $('#display_txt').text('firstname cannot exceed more than 30 characters.');
+                $('#myModal').modal('show');
+                return false;
+            }
+            else {
+                $("#userName").removeClass('validat_cls');
+                return true;
+            }
+        }
+        else {
+            $("#userName").addClass('validat_cls');
+
+            $('#display_txt').text('');
+            $('#display_txt').text('must enter username.');
+            $('#myModal').modal('show');
+        }
+
+        //End
+
+    }
+    function ValidEmail() {
+        //Email validation
+        var Email = $("#userEmail").val();
+        if (Email !== '') {
+            var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+            if (Email.length > 30) {
+
+                $('#display_txt').text('');
+                $('#display_txt').text('email length cannot exceed more than 30 characters.');
+                $('#myModal').modal('show');
+                $("#userEmail").addClass('validat_cls');
+                return false;
+            }
+            else if (!emailReg.test(Email)) {
+
+                $('#display_txt').text('');
+                $('#display_txt').text('please enter the valid email.');
+                $('#myModal').modal('show');
+                $("#userEmail").addClass('validat_cls');
+                return false;
+            }
+            else {
+                $("#userEmail").removeClass('validat_cls');
+                return true;
+            }
+        }
+        else {
+            $("#userEmail").addClass('validat_cls');
+
+            $('#display_txt').text('');
+            $('#display_txt').text('must enter emails.');
+            $('#myModal').modal('show');
+            return false;
+        }
+
+        //End
+    }
+    function ValidPhone() {
+        //phone no. validation
+        var phone = $("#userPhone").val();
+        if (phone !== '') {
+            var phonereg = /^\d{3}-\d{3}-\d{4}$/;
+            if (phone.length > 12) {
+                $("#userPhone").addClass('validat_cls');
+                $('#display_txt').text('');
+                $('#display_txt').text('phone no. length cannot exceed more than 12 characters.');
+                $('#myModal').modal('show');
+
+                return false;
+            }
+                //else if (!phonereg.test(phone)) {
+                //    $("#userPhone").addClass('validation_control');
+                //    alert('please enter the valid phone no.');
+                //    return false;
+                //}
+            else {
+                $("#userPhone").removeClass('validat_cls');
+                return true;
+            }
+        }
+        else {
+            $("#userPhone").addClass('validat_cls');
+
+            $('#display_txt').text('');
+            $('#display_txt').text('must phone no.');
+            $('#myModal').modal('show');
+            return false;
+        }
+
+
+        //end
+    }
+    function ValidSubject() {
+        //subject validation
+        var subject = $("#userSubject").val();
+        if (subject !== '') {
+            if (subject.length > 50) {
+                $("#userSubject").addClass('validation_control');
+                alert(' subject length cannot exceed more than 50 characters.');
+                return false;
+            }
+            else {
+                $("#userSubject").removeClass('validation_control');
+                return true;
+            }
+        }
+        else {
+            $("#userSubject").addClass('validation_control');
+            alert('must enter subject.');
+        }
+
+        //end
+    }
+    function Validmessage() {
+        //subject validation
+        var subject = $("#userSubject").val();
+        if (subject.length > 500) {
+            alert(' Body length cannot exceed more than 500 characters.');
+            return false;
+        }
+        else {
+            return true;
+        }
+        //end
+    }
+
+    function RealtorChecked() {
+        //subject validation
+        debugger;
+        var IsRealtorval = $("#IsReator option:selected").val();
+
+        if (IsRealtorval == "Are you a Realtor?" || IsRealtorval == "0") {
+                $('#display_txt').text('');
+                $('#display_txt').text('Must choose IsReator Or Not.');
+                $('#myModal').modal('show');
+                $("#IsReator").addClass('validat_cls');
+            return false;
+        }
+        else {
+            return true;
+        }
+        //end
+    }
+
+
+
+
+
+    //for second register function
+
+
+    function ValidUsername2() {
+
+        //first name validation
+        var firstname = $("#userName2").val();
+        if (firstname !== '') {
+            if (!/^[a-zA-Z]*$/g.test(firstname)) {
+                $("#userName2").addClass('validation_control');
+
+                $('#display_txt').text('');
+                $('#display_txt').text('Invalid user name.');
+                $('#myModal').modal('show');
+                return false;
+            } else if (firstname.length > 30) {
+                $("#userName2").addClass('validat_cls');
+
+                $('#display_txt').text('');
+                $('#display_txt').text('firstname cannot exceed more than 30 characters.');
+                $('#myModal').modal('show');
+                return false;
+            }
+            else {
+                $("#userName2").removeClass('validat_cls');
+                return true;
+            }
+        }
+        else {
+            $("#userName2").addClass('validat_cls');
+
+            $('#display_txt').text('');
+            $('#display_txt').text('must enter username.');
+            $('#myModal').modal('show');
+        }
+
+        //End
+
+    }
+    function ValidEmail2() {
+        //Email validation
+        var Email = $("#userEmail2").val();
+        if (Email !== '') {
+            var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+            if (Email.length > 30) {
+
+                $('#display_txt').text('');
+                $('#display_txt').text('email length cannot exceed more than 30 characters.');
+                $('#myModal').modal('show');
+                $("#userEmail2").addClass('validat_cls');
+                return false;
+            }
+            else if (!emailReg.test(Email)) {
+
+                $('#display_txt').text('');
+                $('#display_txt').text('please enter the valid email.');
+                $('#myModal').modal('show');
+                $("#userEmail2").addClass('validat_cls');
+                return false;
+            }
+            else {
+                $("#userEmail2").removeClass('validat_cls');
+                return true;
+            }
+        }
+        else {
+            $("#userEmail2").addClass('validat_cls');
+
+            $('#display_txt').text('');
+            $('#display_txt').text('must enter emails.');
+            $('#myModal').modal('show');
+            return false;
+        }
+
+        //End
+    }
+    function ValidPhone2() {
+        //phone no. validation
+        var phone = $("#userPhone2").val();
+        if (phone !== '') {
+            var phonereg = /^\d{3}-\d{3}-\d{4}$/;
+            if (phone.length > 12) {
+                $("#userPhone2").addClass('validat_cls');
+                $('#display_txt').text('');
+                $('#display_txt').text('phone no. length cannot exceed more than 12 characters.');
+                $('#myModal').modal('show');
+
+                return false;
+            }
+                //else if (!phonereg.test(phone)) {
+                //    $("#userPhone").addClass('validation_control');
+                //    alert('please enter the valid phone no.');
+                //    return false;
+                //}
+            else {
+                $("#userPhone2").removeClass('validat_cls');
+                return true;
+            }
+        }
+        else {
+            $("#userPhone2").addClass('validat_cls');
+
+            $('#display_txt').text('');
+            $('#display_txt').text('must phone no.');
+            $('#myModal').modal('show');
+            return false;
+        }
+
+
+        //end
+    }
+    function ValidSubject() {
+        //subject validation
+        var subject = $("#userSubject").val();
+        if (subject !== '') {
+            if (subject.length > 50) {
+                $("#userSubject").addClass('validation_control');
+                alert(' subject length cannot exceed more than 50 characters.');
+                return false;
+            }
+            else {
+                $("#userSubject").removeClass('validation_control');
+                return true;
+            }
+        }
+        else {
+            $("#userSubject").addClass('validation_control');
+            alert('must enter subject.');
+        }
+
+        //end
+    }
+    function Validmessage() {
+        //subject validation
+        var subject = $("#userSubject").val();
+        if (subject.length > 500) {
+            alert(' Body length cannot exceed more than 500 characters.');
+            return false;
+        }
+        else {
+            return true;
+        }
+        //end
+    }
+
+    function RealtorChecked2() {
+        //subject validation
+        debugger;
+        var IsRealtorval = $("#IsReator2 option:selected").val();
+
+        if (IsRealtorval == "Are you a Realtor?" || IsRealtorval == "0") {
+            $('#display_txt').text('');
+            $('#display_txt').text('Must choose IsReator Or Not.');
+            $('#myModal').modal('show');
+            $("#IsReator2").addClass('validat_cls');
+            return false;
+        }
+        else {
+            return true;
+        }
+        //end
+    }
+</script>
+
+<script type="text/javascript">
+
+    $(window).load(function () {
+        $("#flexiselDemo1").flexisel();
+        $("#flexiselDemo2").flexisel({
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 640,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 768,
+                    visibleItems: 3
+                }
+            }
+        });
+
+        $("#flexiselDemo3").flexisel({
+            visibleItems: 5,
+            animationSpeed: 2000,
+            autoPlay: true,
+            autoPlaySpeed: 5000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 640,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 768,
+                    visibleItems: 3
+                }
+            }
+        });
+
+        $("#flexiselDemo4").flexisel({
+            clone: false
+        });
+
+    });
+</script>
+
+
+</html>
